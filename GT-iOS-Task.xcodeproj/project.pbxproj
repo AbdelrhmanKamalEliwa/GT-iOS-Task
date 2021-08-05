@@ -8,22 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		F488CDD126BC403A00C5880E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CDD026BC403A00C5880E /* AppDelegate.swift */; };
-		F488CDD326BC403A00C5880E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CDD226BC403A00C5880E /* SceneDelegate.swift */; };
-		F488CDD526BC403A00C5880E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CDD426BC403A00C5880E /* ViewController.swift */; };
-		F488CDD826BC403A00C5880E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F488CDD626BC403A00C5880E /* Main.storyboard */; };
-		F488CDDA26BC403D00C5880E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F488CDD926BC403D00C5880E /* Assets.xcassets */; };
+		F488CDDA26BC403D00C5880E /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F488CDD926BC403D00C5880E /* Icons.xcassets */; };
 		F488CDDD26BC403D00C5880E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F488CDDB26BC403D00C5880E /* LaunchScreen.storyboard */; };
+		F488CDEB26BC42B500C5880E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F488CDEA26BC42B500C5880E /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F488CDCD26BC403A00C5880E /* GT-iOS-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GT-iOS-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F488CDD026BC403A00C5880E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F488CDD226BC403A00C5880E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F488CDD426BC403A00C5880E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F488CDD726BC403A00C5880E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F488CDD926BC403D00C5880E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F488CDD926BC403D00C5880E /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		F488CDDC26BC403D00C5880E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F488CDDE26BC403D00C5880E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F488CDEA26BC42B500C5880E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +52,61 @@
 		F488CDCF26BC403A00C5880E /* GT-iOS-Task */ = {
 			isa = PBXGroup;
 			children = (
-				F488CDD026BC403A00C5880E /* AppDelegate.swift */,
-				F488CDD226BC403A00C5880E /* SceneDelegate.swift */,
-				F488CDD426BC403A00C5880E /* ViewController.swift */,
-				F488CDD626BC403A00C5880E /* Main.storyboard */,
-				F488CDD926BC403D00C5880E /* Assets.xcassets */,
-				F488CDDB26BC403D00C5880E /* LaunchScreen.storyboard */,
-				F488CDDE26BC403D00C5880E /* Info.plist */,
+				F488CDE926BC428C00C5880E /* Core */,
+				F488CDE826BC428700C5880E /* Scenes */,
+				F488CDE426BC414300C5880E /* Resources */,
+				F488CDE526BC414D00C5880E /* Configurations */,
 			);
 			path = "GT-iOS-Task";
+			sourceTree = "<group>";
+		};
+		F488CDE426BC414300C5880E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F488CDE626BC41B000C5880E /* Application */,
+				F488CDE726BC41BB00C5880E /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F488CDE526BC414D00C5880E /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				F488CDDE26BC403D00C5880E /* Info.plist */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		F488CDE626BC41B000C5880E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F488CDD026BC403A00C5880E /* AppDelegate.swift */,
+				F488CDDB26BC403D00C5880E /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F488CDE726BC41BB00C5880E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F488CDD926BC403D00C5880E /* Icons.xcassets */,
+				F488CDEA26BC42B500C5880E /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F488CDE826BC428700C5880E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F488CDE926BC428C00C5880E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +166,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F488CDEB26BC42B500C5880E /* Colors.xcassets in Resources */,
 				F488CDDD26BC403D00C5880E /* LaunchScreen.storyboard in Resources */,
-				F488CDDA26BC403D00C5880E /* Assets.xcassets in Resources */,
-				F488CDD826BC403A00C5880E /* Main.storyboard in Resources */,
+				F488CDDA26BC403D00C5880E /* Icons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F488CDD526BC403A00C5880E /* ViewController.swift in Sources */,
 				F488CDD126BC403A00C5880E /* AppDelegate.swift in Sources */,
-				F488CDD326BC403A00C5880E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F488CDD626BC403A00C5880E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F488CDD726BC403A00C5880E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F488CDDB26BC403D00C5880E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +320,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PU8FM4JDVA;
-				INFOPLIST_FILE = "GT-iOS-Task/Info.plist";
+				INFOPLIST_FILE = "GT-iOS-Task/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "abdelrhmankamaleliwa.GT-iOS-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PU8FM4JDVA;
-				INFOPLIST_FILE = "GT-iOS-Task/Info.plist";
+				INFOPLIST_FILE = "GT-iOS-Task/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +347,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "abdelrhmankamaleliwa.GT-iOS-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
