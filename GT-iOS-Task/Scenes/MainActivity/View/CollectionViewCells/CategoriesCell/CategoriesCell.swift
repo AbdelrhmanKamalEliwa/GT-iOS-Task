@@ -7,15 +7,20 @@
 
 import UIKit
 
-class CategoriesCell: UICollectionViewCell, CategoriesCellViewProtocol {
+class CategoriesCell: UICollectionViewCell {
     
+    // MARK: - Properties
     @IBOutlet private weak var iconImageView: UIImageView!
     
+    // MARK: - Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
         cornerRadius = 5
     }
+}
 
+// MARK: - CategoriesCellView Delegate
+extension CategoriesCell: CategoriesCellViewProtocol {
     func configure(model: CategoriesCellModel) {
         iconImageView.image = UIImage(named: model.image ?? "")
     }

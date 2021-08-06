@@ -8,8 +8,10 @@
 import UIKit
 
 class MainActivityRouter: MainActivityRouterProtocol {
+    // MARK: - Properties
     weak var viewController: UIViewController?
     
+    // MARK: - Methods
     static func createModule() -> UIViewController {
         let view = MainActivityVC()
         let interactor = MainActivityInteractor()
@@ -23,5 +25,12 @@ class MainActivityRouter: MainActivityRouterProtocol {
         interactor.presenter = presenter
         router.viewController = view
         return view
+    }
+    
+    func presentMainUnityActivityVC(from view: MainActivityViewProtocol?) {
+        let mainUnityActivityVC = UIViewController()
+        if let viewController = view as? UIViewController {
+            viewController.present(mainUnityActivityVC, animated: true)
+        }
     }
 }

@@ -11,6 +11,7 @@ protocol MainActivityViewProtocol: AnyObject {
     var presenter: MainActivityPresenterProtocol! { get set }
     func setupNavbar()
     func setupCollectionView()
+    func setupSearchBar()
     func dataFetchedSuccessfully()
     func showLoadingAnimation()
     func hideLoadingAnimation()
@@ -62,4 +63,6 @@ protocol MainActivityInteractorOutputProtocol: AnyObject {
     func dataFetchingFailed(withError error: Error)
 }
 
-protocol MainActivityRouterProtocol { }
+protocol MainActivityRouterProtocol {
+    func presentMainUnityActivityVC(from view: MainActivityViewProtocol?)
+}

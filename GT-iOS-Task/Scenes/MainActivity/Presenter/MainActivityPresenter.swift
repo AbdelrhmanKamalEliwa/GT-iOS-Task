@@ -9,12 +9,17 @@ import Foundation
 
 class MainActivityPresenter: MainActivityPresenterProtocol {
     
+    // MARK: - Properties
     weak var view: MainActivityViewProtocol?
     private let interactor: MainActivityInteractorInputProtocol
     private let router: MainActivityRouterProtocol
     private var dummyDataSource: [[DataSourceModel]] = []
     private var dummyHeaders: [CollectionViewHeaderModel] = CollectionViewHeaders.data
+    var numberOfSections: Int {
+        dummyDataSource.count
+    }
     
+    // MARK: - Init
     init(
         view: MainActivityViewProtocol,
         interactor: MainActivityInteractorInputProtocol,
@@ -25,12 +30,10 @@ class MainActivityPresenter: MainActivityPresenterProtocol {
         self.router = router
     }
     
-    var numberOfSections: Int {
-        dummyDataSource.count
-    }
-    
+    // MARK: - Methods
     func viewDidLoad() {
         view?.setupCollectionView()
+        view?.setupSearchBar()
         fetchData()
     }
     
@@ -43,7 +46,7 @@ class MainActivityPresenter: MainActivityPresenterProtocol {
     }
     
     func didTapAddButton() {
-        
+        router.presentMainUnityActivityVC(from: view)
     }
     
     func numberOfItems(for section: Int) -> Int {
@@ -83,12 +86,14 @@ class MainActivityPresenter: MainActivityPresenterProtocol {
         header.configure(model: model)
     }
     
+    // MARK: - Private Methods
     private func fetchData() {
         view?.showLoadingAnimation()
         interactor.fetchData()
     }
 }
 
+// MARK: - Interactor Delegates
 extension MainActivityPresenter: MainActivityInteractorOutputProtocol {
     func dataFetchedSuccessfully(serviceResponse: [[DataSourceModel]]) {
         view?.hideLoadingAnimation()

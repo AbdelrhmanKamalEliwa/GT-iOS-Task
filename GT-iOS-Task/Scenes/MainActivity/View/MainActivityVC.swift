@@ -9,10 +9,12 @@ import UIKit
 
 class MainActivityVC: BaseWireframe, CustomeNavbarProtocol {
 
+    // MARK: - Properties
     @IBOutlet private weak var searchBar: UISearchBar!
     @IBOutlet private weak var collectionView: UICollectionView!
     var presenter: MainActivityPresenterProtocol!
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
@@ -23,6 +25,7 @@ class MainActivityVC: BaseWireframe, CustomeNavbarProtocol {
         presenter.viewWillAppear()
     }
     
+    // MARK: - Methods
     @objc
     private func didTapMenuButton() {
         presenter.didTapMenuButton()
@@ -34,7 +37,9 @@ class MainActivityVC: BaseWireframe, CustomeNavbarProtocol {
     }
 }
 
+// MARK: - Presenter Delegate
 extension MainActivityVC: MainActivityViewProtocol {
+    
     func setupNavbar() {
         let menuButton = UIBarButtonItem(
             image: UIImage(systemName: "text.justify"),
@@ -43,8 +48,8 @@ extension MainActivityVC: MainActivityViewProtocol {
             action: #selector(didTapMenuButton)
         )
         let logoImage = UIBarButtonItem(
-            image: UIImage(named: "logo"),
-            style: .done,
+            image: UIImage(named: "logo-2"),
+            style: .plain,
             target: self,
             action: nil
         )
@@ -77,6 +82,10 @@ extension MainActivityVC: MainActivityViewProtocol {
         collectionView.registerHeaderFooter(cellClass: HeaderView.self, kind: "header")
     }
     
+    func setupSearchBar() {
+        searchBar.searchTextField.delegate = self
+    }
+    
     func dataFetchedSuccessfully() {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
@@ -98,6 +107,15 @@ extension MainActivityVC: MainActivityViewProtocol {
     }
 }
 
+// MARK: - SearchBar TextField Delegate
+extension MainActivityVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return false
+    }
+}
+
+// MARK: - CollectionView Delegate & DataSource
 extension MainActivityVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         presenter.numberOfSections
@@ -129,6 +147,7 @@ extension MainActivityVC: UICollectionViewDelegate, UICollectionViewDataSource {
         return headerView
     }
     
+    // MARK: CollectionView Helper Function
     private func dequeueCollectionViewCell(for indexPath: IndexPath) -> UICollectionViewCell {
         switch indexPath.section {
         case 0:

@@ -8,8 +8,10 @@
 import Foundation
 
 class MainActivityInteractor: MainActivityInteractorInputProtocol {
+    // MARK: - Properties
     weak var presenter: MainActivityInteractorOutputProtocol?
     
+    // MARK: - Methods
     func fetchData() {
         let data = DummyDataSource().data
         presenter?.dataFetchedSuccessfully(serviceResponse: data)
