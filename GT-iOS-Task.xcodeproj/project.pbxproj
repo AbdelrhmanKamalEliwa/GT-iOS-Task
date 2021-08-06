@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F45F50F926BCF4A900BDA29D /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45F50F726BCF4A900BDA29D /* CategoriesCell.swift */; };
+		F45F50FA26BCF4A900BDA29D /* CategoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45F50F826BCF4A900BDA29D /* CategoriesCell.xib */; };
+		F45F50FC26BCF80F00BDA29D /* DummyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45F50FB26BCF80F00BDA29D /* DummyDataSource.swift */; };
+		F45F50FE26BCFDFF00BDA29D /* MainActivityInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45F50FD26BCFDFF00BDA29D /* MainActivityInteractor.swift */; };
+		F45F510026BCFE7800BDA29D /* MainActivityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45F50FF26BCFE7800BDA29D /* MainActivityRouter.swift */; };
 		F488CDD126BC403A00C5880E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CDD026BC403A00C5880E /* AppDelegate.swift */; };
 		F488CDDA26BC403D00C5880E /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F488CDD926BC403D00C5880E /* Icons.xcassets */; };
 		F488CDDD26BC403D00C5880E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F488CDDB26BC403D00C5880E /* LaunchScreen.storyboard */; };
@@ -15,9 +20,35 @@
 		F488CDF126BC646800C5880E /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CDEF26BC646800C5880E /* BaseWireframe.swift */; };
 		F488CDF426BC648000C5880E /* AlertDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CDF226BC648000C5880E /* AlertDisplayer.swift */; };
 		F488CDF526BC648000C5880E /* Navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CDF326BC648000C5880E /* Navbar.swift */; };
+		F488CDF926BC6C7E00C5880E /* MainActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CDF726BC6C7E00C5880E /* MainActivityVC.swift */; };
+		F488CDFA26BC6C7E00C5880E /* MainActivityVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F488CDF826BC6C7E00C5880E /* MainActivityVC.xib */; };
+		F488CDFD26BC6E1B00C5880E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CDFC26BC6E1B00C5880E /* UIView+Extension.swift */; };
+		F488CE0026BC6E2F00C5880E /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CDFE26BC6E2F00C5880E /* UITableView+Extensions.swift */; };
+		F488CE0126BC6E2F00C5880E /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CDFF26BC6E2F00C5880E /* UICollectionView+Extensions.swift */; };
+		F488CE0A26BCD2DD00C5880E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CE0826BCD2DD00C5880E /* HeaderView.swift */; };
+		F488CE0B26BCD2DD00C5880E /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F488CE0926BCD2DD00C5880E /* HeaderView.xib */; };
+		F488CE0D26BCE5B600C5880E /* MainActivityVC+CompositionalLayoutExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CE0C26BCE5B600C5880E /* MainActivityVC+CompositionalLayoutExtension.swift */; };
+		F488CE1426BCE8F800C5880E /* MainActivityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CE1326BCE8F800C5880E /* MainActivityPresenter.swift */; };
+		F488CE1626BCE92900C5880E /* MainActivityProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CE1526BCE92900C5880E /* MainActivityProtocols.swift */; };
+		F488CE1926BCED6A00C5880E /* BannerCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CE1826BCED6A00C5880E /* BannerCellModel.swift */; };
+		F488CE1B26BCED8300C5880E /* SpecialEventsCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CE1A26BCED8300C5880E /* SpecialEventsCellModel.swift */; };
+		F488CE1D26BCED9700C5880E /* GamesCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CE1C26BCED9700C5880E /* GamesCellModel.swift */; };
+		F488CE1F26BCEDAE00C5880E /* CategoriesCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CE1E26BCEDAE00C5880E /* CategoriesCellModel.swift */; };
+		F488CE2126BCEED600C5880E /* CollectionViewHeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CE2026BCEED600C5880E /* CollectionViewHeaderModel.swift */; };
+		F488CE2526BCF0A000C5880E /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CE2326BCF0A000C5880E /* BannerCell.swift */; };
+		F488CE2626BCF0A000C5880E /* BannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F488CE2426BCF0A000C5880E /* BannerCell.xib */; };
+		F488CE2926BCF18F00C5880E /* SpecialEventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CE2726BCF18F00C5880E /* SpecialEventsCell.swift */; };
+		F488CE2A26BCF18F00C5880E /* SpecialEventsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F488CE2826BCF18F00C5880E /* SpecialEventsCell.xib */; };
+		F488CE2F26BCF33200C5880E /* GamesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CE2D26BCF33200C5880E /* GamesCell.swift */; };
+		F488CE3026BCF33200C5880E /* GamesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F488CE2E26BCF33200C5880E /* GamesCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F45F50F726BCF4A900BDA29D /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
+		F45F50F826BCF4A900BDA29D /* CategoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCell.xib; sourceTree = "<group>"; };
+		F45F50FB26BCF80F00BDA29D /* DummyDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDataSource.swift; sourceTree = "<group>"; };
+		F45F50FD26BCFDFF00BDA29D /* MainActivityInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainActivityInteractor.swift; sourceTree = "<group>"; };
+		F45F50FF26BCFE7800BDA29D /* MainActivityRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainActivityRouter.swift; sourceTree = "<group>"; };
 		F488CDCD26BC403A00C5880E /* GT-iOS-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GT-iOS-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F488CDD026BC403A00C5880E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F488CDD926BC403D00C5880E /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
@@ -28,6 +59,27 @@
 		F488CDEF26BC646800C5880E /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
 		F488CDF226BC648000C5880E /* AlertDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDisplayer.swift; sourceTree = "<group>"; };
 		F488CDF326BC648000C5880E /* Navbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navbar.swift; sourceTree = "<group>"; };
+		F488CDF726BC6C7E00C5880E /* MainActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainActivityVC.swift; sourceTree = "<group>"; };
+		F488CDF826BC6C7E00C5880E /* MainActivityVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainActivityVC.xib; sourceTree = "<group>"; };
+		F488CDFC26BC6E1B00C5880E /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F488CDFE26BC6E2F00C5880E /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		F488CDFF26BC6E2F00C5880E /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		F488CE0826BCD2DD00C5880E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		F488CE0926BCD2DD00C5880E /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		F488CE0C26BCE5B600C5880E /* MainActivityVC+CompositionalLayoutExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainActivityVC+CompositionalLayoutExtension.swift"; sourceTree = "<group>"; };
+		F488CE1326BCE8F800C5880E /* MainActivityPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainActivityPresenter.swift; sourceTree = "<group>"; };
+		F488CE1526BCE92900C5880E /* MainActivityProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainActivityProtocols.swift; sourceTree = "<group>"; };
+		F488CE1826BCED6A00C5880E /* BannerCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCellModel.swift; sourceTree = "<group>"; };
+		F488CE1A26BCED8300C5880E /* SpecialEventsCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialEventsCellModel.swift; sourceTree = "<group>"; };
+		F488CE1C26BCED9700C5880E /* GamesCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesCellModel.swift; sourceTree = "<group>"; };
+		F488CE1E26BCEDAE00C5880E /* CategoriesCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCellModel.swift; sourceTree = "<group>"; };
+		F488CE2026BCEED600C5880E /* CollectionViewHeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHeaderModel.swift; sourceTree = "<group>"; };
+		F488CE2326BCF0A000C5880E /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
+		F488CE2426BCF0A000C5880E /* BannerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCell.xib; sourceTree = "<group>"; };
+		F488CE2726BCF18F00C5880E /* SpecialEventsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialEventsCell.swift; sourceTree = "<group>"; };
+		F488CE2826BCF18F00C5880E /* SpecialEventsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialEventsCell.xib; sourceTree = "<group>"; };
+		F488CE2D26BCF33200C5880E /* GamesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesCell.swift; sourceTree = "<group>"; };
+		F488CE2E26BCF33200C5880E /* GamesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F45F50F626BCF49800BDA29D /* CategoriesCell */ = {
+			isa = PBXGroup;
+			children = (
+				F45F50F726BCF4A900BDA29D /* CategoriesCell.swift */,
+				F45F50F826BCF4A900BDA29D /* CategoriesCell.xib */,
+			);
+			path = CategoriesCell;
+			sourceTree = "<group>";
+		};
 		F488CDC426BC403A00C5880E = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +121,8 @@
 		F488CDCF26BC403A00C5880E /* GT-iOS-Task */ = {
 			isa = PBXGroup;
 			children = (
+				F488CDFB26BC6E0300C5880E /* Extensions */,
+				F488CE1726BCED5800C5880E /* Models */,
 				F488CDE926BC428C00C5880E /* Core */,
 				F488CDE826BC428700C5880E /* Scenes */,
 				F488CDE426BC414300C5880E /* Resources */,
@@ -125,6 +188,11 @@
 		F488CDEC26BC63F700C5880E /* MainActivity */ = {
 			isa = PBXGroup;
 			children = (
+				F488CE1226BCE8E300C5880E /* Protocols */,
+				F488CE1126BCE8DF00C5880E /* Router */,
+				F488CE1026BCE8D700C5880E /* Interactor */,
+				F488CE0F26BCE8D100C5880E /* Presenter */,
+				F488CE0E26BCE8CE00C5880E /* View */,
 			);
 			path = MainActivity;
 			sourceTree = "<group>";
@@ -143,6 +211,120 @@
 				F488CDF326BC648000C5880E /* Navbar.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F488CDFB26BC6E0300C5880E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F488CDFF26BC6E2F00C5880E /* UICollectionView+Extensions.swift */,
+				F488CDFE26BC6E2F00C5880E /* UITableView+Extensions.swift */,
+				F488CDFC26BC6E1B00C5880E /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F488CE0226BCD23C00C5880E /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F488CE2226BCF08600C5880E /* BannerCell */,
+				F488CE2B26BCF19500C5880E /* SpecialEventsCell */,
+				F488CE2C26BCF32400C5880E /* GamesCell */,
+				F45F50F626BCF49800BDA29D /* CategoriesCell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		F488CE0726BCD2C800C5880E /* CollectionViewHeader */ = {
+			isa = PBXGroup;
+			children = (
+				F488CE0826BCD2DD00C5880E /* HeaderView.swift */,
+				F488CE0926BCD2DD00C5880E /* HeaderView.xib */,
+			);
+			path = CollectionViewHeader;
+			sourceTree = "<group>";
+		};
+		F488CE0E26BCE8CE00C5880E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F488CDF726BC6C7E00C5880E /* MainActivityVC.swift */,
+				F488CE0C26BCE5B600C5880E /* MainActivityVC+CompositionalLayoutExtension.swift */,
+				F488CDF826BC6C7E00C5880E /* MainActivityVC.xib */,
+				F488CE0726BCD2C800C5880E /* CollectionViewHeader */,
+				F488CE0226BCD23C00C5880E /* CollectionViewCells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F488CE0F26BCE8D100C5880E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F488CE1326BCE8F800C5880E /* MainActivityPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F488CE1026BCE8D700C5880E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F45F50FD26BCFDFF00BDA29D /* MainActivityInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F488CE1126BCE8DF00C5880E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F45F50FF26BCFE7800BDA29D /* MainActivityRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F488CE1226BCE8E300C5880E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F488CE1526BCE92900C5880E /* MainActivityProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F488CE1726BCED5800C5880E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F488CE1826BCED6A00C5880E /* BannerCellModel.swift */,
+				F488CE1A26BCED8300C5880E /* SpecialEventsCellModel.swift */,
+				F488CE1C26BCED9700C5880E /* GamesCellModel.swift */,
+				F488CE1E26BCEDAE00C5880E /* CategoriesCellModel.swift */,
+				F488CE2026BCEED600C5880E /* CollectionViewHeaderModel.swift */,
+				F45F50FB26BCF80F00BDA29D /* DummyDataSource.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F488CE2226BCF08600C5880E /* BannerCell */ = {
+			isa = PBXGroup;
+			children = (
+				F488CE2326BCF0A000C5880E /* BannerCell.swift */,
+				F488CE2426BCF0A000C5880E /* BannerCell.xib */,
+			);
+			path = BannerCell;
+			sourceTree = "<group>";
+		};
+		F488CE2B26BCF19500C5880E /* SpecialEventsCell */ = {
+			isa = PBXGroup;
+			children = (
+				F488CE2726BCF18F00C5880E /* SpecialEventsCell.swift */,
+				F488CE2826BCF18F00C5880E /* SpecialEventsCell.xib */,
+			);
+			path = SpecialEventsCell;
+			sourceTree = "<group>";
+		};
+		F488CE2C26BCF32400C5880E /* GamesCell */ = {
+			isa = PBXGroup;
+			children = (
+				F488CE2D26BCF33200C5880E /* GamesCell.swift */,
+				F488CE2E26BCF33200C5880E /* GamesCell.xib */,
+			);
+			path = GamesCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +386,12 @@
 			files = (
 				F488CDEB26BC42B500C5880E /* Colors.xcassets in Resources */,
 				F488CDDD26BC403D00C5880E /* LaunchScreen.storyboard in Resources */,
+				F488CE3026BCF33200C5880E /* GamesCell.xib in Resources */,
+				F488CDFA26BC6C7E00C5880E /* MainActivityVC.xib in Resources */,
+				F488CE2626BCF0A000C5880E /* BannerCell.xib in Resources */,
+				F45F50FA26BCF4A900BDA29D /* CategoriesCell.xib in Resources */,
+				F488CE2A26BCF18F00C5880E /* SpecialEventsCell.xib in Resources */,
+				F488CE0B26BCD2DD00C5880E /* HeaderView.xib in Resources */,
 				F488CDDA26BC403D00C5880E /* Icons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,10 +403,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F488CE2526BCF0A000C5880E /* BannerCell.swift in Sources */,
 				F488CDF426BC648000C5880E /* AlertDisplayer.swift in Sources */,
+				F488CE1426BCE8F800C5880E /* MainActivityPresenter.swift in Sources */,
+				F488CE1D26BCED9700C5880E /* GamesCellModel.swift in Sources */,
+				F488CDFD26BC6E1B00C5880E /* UIView+Extension.swift in Sources */,
+				F488CE2126BCEED600C5880E /* CollectionViewHeaderModel.swift in Sources */,
+				F488CE1926BCED6A00C5880E /* BannerCellModel.swift in Sources */,
 				F488CDF126BC646800C5880E /* BaseWireframe.swift in Sources */,
+				F488CE0026BC6E2F00C5880E /* UITableView+Extensions.swift in Sources */,
 				F488CDD126BC403A00C5880E /* AppDelegate.swift in Sources */,
+				F488CE2926BCF18F00C5880E /* SpecialEventsCell.swift in Sources */,
+				F488CE1F26BCEDAE00C5880E /* CategoriesCellModel.swift in Sources */,
+				F45F50FC26BCF80F00BDA29D /* DummyDataSource.swift in Sources */,
+				F45F50F926BCF4A900BDA29D /* CategoriesCell.swift in Sources */,
+				F488CE2F26BCF33200C5880E /* GamesCell.swift in Sources */,
+				F488CE0126BC6E2F00C5880E /* UICollectionView+Extensions.swift in Sources */,
+				F488CE0A26BCD2DD00C5880E /* HeaderView.swift in Sources */,
 				F488CDF526BC648000C5880E /* Navbar.swift in Sources */,
+				F488CDF926BC6C7E00C5880E /* MainActivityVC.swift in Sources */,
+				F488CE1626BCE92900C5880E /* MainActivityProtocols.swift in Sources */,
+				F45F50FE26BCFDFF00BDA29D /* MainActivityInteractor.swift in Sources */,
+				F488CE0D26BCE5B600C5880E /* MainActivityVC+CompositionalLayoutExtension.swift in Sources */,
+				F45F510026BCFE7800BDA29D /* MainActivityRouter.swift in Sources */,
+				F488CE1B26BCED8300C5880E /* SpecialEventsCellModel.swift in Sources */,
 				F488CDF026BC646800C5880E /* MainRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
