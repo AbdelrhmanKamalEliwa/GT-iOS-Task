@@ -28,7 +28,7 @@ class MainActivityRouter: MainActivityRouterProtocol {
     }
     
     func presentMainUnityActivityVC(from view: MainActivityViewProtocol?) {
-        let mainUnityActivityVC = UIViewController()
+        let mainUnityActivityVC = MainUnityActivityVC()
         if let viewController = view as? UIViewController {
             viewController.present(mainUnityActivityVC, animated: true)
         }

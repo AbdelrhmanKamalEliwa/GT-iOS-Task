@@ -12,6 +12,8 @@
 		F45F50FC26BCF80F00BDA29D /* DummyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45F50FB26BCF80F00BDA29D /* DummyDataSource.swift */; };
 		F45F50FE26BCFDFF00BDA29D /* MainActivityInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45F50FD26BCFDFF00BDA29D /* MainActivityInteractor.swift */; };
 		F45F510026BCFE7800BDA29D /* MainActivityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45F50FF26BCFE7800BDA29D /* MainActivityRouter.swift */; };
+		F45F510426BD67E900BDA29D /* MainUnityActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45F510226BD67E900BDA29D /* MainUnityActivityVC.swift */; };
+		F45F510526BD67E900BDA29D /* MainUnityActivityVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45F510326BD67E900BDA29D /* MainUnityActivityVC.xib */; };
 		F488CDD126BC403A00C5880E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488CDD026BC403A00C5880E /* AppDelegate.swift */; };
 		F488CDDA26BC403D00C5880E /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F488CDD926BC403D00C5880E /* Icons.xcassets */; };
 		F488CDDD26BC403D00C5880E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F488CDDB26BC403D00C5880E /* LaunchScreen.storyboard */; };
@@ -49,6 +51,8 @@
 		F45F50FB26BCF80F00BDA29D /* DummyDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDataSource.swift; sourceTree = "<group>"; };
 		F45F50FD26BCFDFF00BDA29D /* MainActivityInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainActivityInteractor.swift; sourceTree = "<group>"; };
 		F45F50FF26BCFE7800BDA29D /* MainActivityRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainActivityRouter.swift; sourceTree = "<group>"; };
+		F45F510226BD67E900BDA29D /* MainUnityActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUnityActivityVC.swift; sourceTree = "<group>"; };
+		F45F510326BD67E900BDA29D /* MainUnityActivityVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainUnityActivityVC.xib; sourceTree = "<group>"; };
 		F488CDCD26BC403A00C5880E /* GT-iOS-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GT-iOS-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F488CDD026BC403A00C5880E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F488CDD926BC403D00C5880E /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
@@ -100,6 +104,15 @@
 				F45F50F826BCF4A900BDA29D /* CategoriesCell.xib */,
 			);
 			path = CategoriesCell;
+			sourceTree = "<group>";
+		};
+		F45F510126BD67BA00BDA29D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F45F510226BD67E900BDA29D /* MainUnityActivityVC.swift */,
+				F45F510326BD67E900BDA29D /* MainUnityActivityVC.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F488CDC426BC403A00C5880E = {
@@ -200,6 +213,7 @@
 		F488CDED26BC641000C5880E /* MainUnityActivity */ = {
 			isa = PBXGroup;
 			children = (
+				F45F510126BD67BA00BDA29D /* View */,
 			);
 			path = MainUnityActivity;
 			sourceTree = "<group>";
@@ -386,6 +400,7 @@
 			files = (
 				F488CDEB26BC42B500C5880E /* Colors.xcassets in Resources */,
 				F488CDDD26BC403D00C5880E /* LaunchScreen.storyboard in Resources */,
+				F45F510526BD67E900BDA29D /* MainUnityActivityVC.xib in Resources */,
 				F488CE3026BCF33200C5880E /* GamesCell.xib in Resources */,
 				F488CDFA26BC6C7E00C5880E /* MainActivityVC.xib in Resources */,
 				F488CE2626BCF0A000C5880E /* BannerCell.xib in Resources */,
@@ -403,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45F510426BD67E900BDA29D /* MainUnityActivityVC.swift in Sources */,
 				F488CE2526BCF0A000C5880E /* BannerCell.swift in Sources */,
 				F488CDF426BC648000C5880E /* AlertDisplayer.swift in Sources */,
 				F488CE1426BCE8F800C5880E /* MainActivityPresenter.swift in Sources */,
