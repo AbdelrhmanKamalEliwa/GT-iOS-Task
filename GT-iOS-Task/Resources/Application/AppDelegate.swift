@@ -13,10 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var mainRouter: MainRouter?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let view = UIViewController()
-        view.view.backgroundColor = .red
+        let view = MainActivityRouter.createModule()
+        let navController = UINavigationController(rootViewController: view)
         mainRouter = MainRouter()
-        mainRouter?.start(with: view)
+        mainRouter?.start(with: navController)
         return true
     }
 }
